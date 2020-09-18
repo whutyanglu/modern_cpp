@@ -38,5 +38,11 @@
     <ClInclude Include="my_base.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="cmm_optional.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="boost_option_preview.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
