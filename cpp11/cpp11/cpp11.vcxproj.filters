@@ -44,5 +44,8 @@
     <ClInclude Include="boost_option_preview.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="mem_special.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

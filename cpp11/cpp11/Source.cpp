@@ -5,6 +5,7 @@
 #include "my_forward.h"
 #include "boost_option_preview.h"
 #include "cmm_optional.h"
+#include "mem_special.h"
 
 #include <optional>
 
@@ -43,10 +44,11 @@ struct AlignTest {
 int main(int argc, const char* argv[]) {
   std::cout << "Hello C++11 " << std::endl;
 
+  //mem::test();
 
   pbx_base::test();
 
-  pbx_base::cmm_optional<int> a;
+  //pbx_base::cmm_optional<int> a;
 
   //constexpr size_t _size_of_t      = sizeof(AlignTest);
   //constexpr size_t _alignment_of_t = __alignof(AlignTest);

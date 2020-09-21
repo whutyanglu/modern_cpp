@@ -147,6 +147,7 @@
     <ClInclude Include="boost_option_preview.h" />
     <ClInclude Include="cmm_optional.h" />
     <ClInclude Include="const_expr.h" />
+    <ClInclude Include="mem_special.h" />
     <ClInclude Include="my_base.h" />
     <ClInclude Include="my_forward.h" />
     <ClInclude Include="my_string.h" />
