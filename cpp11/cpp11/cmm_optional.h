@@ -31,16 +31,16 @@ class optional {
     std::cout << "~cmm_optional()" << "\n";
    }
 
-   optional() 
+   explicit optional()
    : has_value_(false)
    , value_() { std::cout << "cmm_optional()" << "\n"; 
    }
-   optional(const value_type& _right) 
+   explicit optional(const value_type& _right) 
    : has_value_(true)
    , value_(_right) { 
     std::cout << "cmm_optional::cmm_optional(const value_type& _right)" << "\n";
    }
-   optional(const this_type & _right) {
+   explicit optional(const this_type & _right) {
      has_value_ = _right.has_value_;
      if (has_value_) {
       value_ = _right.value_;
@@ -69,13 +69,13 @@ class optional {
     return *this;
    }
 
-   optional(value_type && _right) 
+   explicit optional(value_type && _right)
    : has_value_(true)
    , value_(std::move(_right)) { 
      std::cout << "cmm_optional(value_type && _right)" << "\n"; 
    }
 
-   optional(this_type && _right) {
+   explicit optional(this_type && _right) {
      has_value_ = _right.has_value_;
      if (has_value_) {
        value_ = std::move(_right.value_);

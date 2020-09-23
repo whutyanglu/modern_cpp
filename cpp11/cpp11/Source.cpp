@@ -80,7 +80,7 @@ void optional_test() {
   {
     std::cout << "\n  ======================== \n";
 
-    optional<std::string> left = EQUAL_STR;
+    optional<std::string> left(EQUAL_STR);
     assert(left == EQUAL_STR);
     assert(EQUAL_STR == left);
     assert(left != "A");
@@ -126,5 +126,7 @@ void optional_test() {
 
 int main(int argc, const char* argv[]) {
   optional_test();
+
+  mem::test();
   return 0;
 }
