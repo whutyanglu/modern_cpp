@@ -76,9 +76,6 @@ void test() {
 
  {
     std::cout << "\n\n=======================\n\n";
-    optional<A> a;
-    optional<A> aa;
-    optional<B> b;
 
 
   //  a = aa;

@@ -51,11 +51,11 @@ int fpoly_only(T t) { return 1; }
 struct S {virtual ~S() {} };
 
 int test() {
-  Container<int> c;
-  g(c); // Container::value_type will be int in this function
-//  fpoly_only(c); // error: enable_if prohibits this
-  S s;
-  fpoly_only(s); // okay: enable_if allows this
+//  Container<int> c;
+//  g(c); // Container::value_type will be int in this function
+////  fpoly_only(c); // error: enable_if prohibits this
+//  S s;
+//  fpoly_only(s); // okay: enable_if allows this
 
   return 0;
 }

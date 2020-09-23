@@ -1,0 +1,14 @@
+/out/
+/cpp11/Debug/
+/cpp11/cpp11/Debug/
+/cpp11/Release/
+*.suo
+*.sdf
+*.opensdf
+*.opendb
+*.VC.db
+*.aps
+*.xcodeproj
+ipch/
+.vs/
+*.*~
